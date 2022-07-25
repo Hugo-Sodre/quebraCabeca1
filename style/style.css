@@ -28,13 +28,13 @@ html{
 }
 
 .quadrado{
-    width: 400px;
-    height: 400px;
+    width: 230px;
+    height: 230px;
     border-radius: 5px;
     box-shadow: 1px 1px 2px rgba(191,191,191,0.3);
     cursor: pointer;
     text-align: center;
-    line-height: 400px;
+    
     font-family: sans-serif;
 }
 
@@ -65,4 +65,9 @@ html{
 #q4{
     background-image: radial-gradient(#0000FF,	#121250);
 }
-
+#q5{
+    background-image: radial-gradient(#ff00dd,	#121250);
+}
+#q6{
+    background-image: radial-gradient(#ff0040,	#121250);
+}

@@ -1,18 +1,22 @@
-var id_Origem =0
-var id_Destino =0
-var conteudoOrigem =0
-var conteudoDestino =0
+var origem = 0;
+var destino = 0;
+var conteudoOrigem = "";
+var conteudoDestino = "";
 
-document.querySelectorAll("div").forEach( function(div) {
-    
-    div.addEventListener("click", function(event) {
-    const obj = event.target 
-    const id = obj.id
-    console.log(id)
-    
-    var conteudo = $('#'+ id).html()
-    console.log(conteudo)
 
-  
-  });
-});
+
+function troca (clicado) {
+    if(origem == 0){
+        conteudoOrigem = clicado.innerHTML
+        origem = clicado
+    } else{
+        conteudoDestino = clicado.innerHTML
+        destino = clicado
+    }
+    if(origem != 0 && destino != 0){
+        origem.innerHTML = conteudoDestino
+        destino.innerHTML = conteudoOrigem
+        origem = 0
+        destino = 0
+    }
+}
